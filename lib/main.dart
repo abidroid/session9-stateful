@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:session9/screens/first_screen.dart';
+import 'package:session9/screens/fourth_screen.dart';
 import 'package:session9/screens/second_screen.dart';
 import 'package:session9/screens/third_screen.dart';
 
@@ -15,13 +16,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
 
 
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const ThirdScreen(),
+      home: const FourthScreen(),
     );
   }
 }

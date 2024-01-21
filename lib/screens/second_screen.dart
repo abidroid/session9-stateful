@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:session9/screens/third_screen.dart';
 
 class SecondScreen extends StatefulWidget {
   const SecondScreen({super.key});
@@ -46,6 +47,13 @@ class _SecondScreenState extends State<SecondScreen> {
               });
             }, child: const Text('Blue')),
 
+            TextButton(onPressed: (){
+
+              Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context){
+                return const ThirdScreen();
+              }));
+
+            }, child: const Text('Go to 3rd Screen'))
           ],
         ),
       ),
